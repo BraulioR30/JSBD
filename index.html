@@ -19,6 +19,26 @@
             background-color: #f8f9fa; /* Esto es útil si la imagen no se carga o es transparente */
         }
 
+        @font-face {
+         font-family: 'JSBD'; /* Nombre de la fuente personalizada */
+         src: url('JSBD.ttf') format('truetype'); /* Ruta de la fuente y formato */
+    }
+        @font-face {
+         font-family: 'Texto1'; /* Nombre de la fuente personalizada */
+         src: url('Texto1.ttf') format('truetype'); /* Ruta de la fuente y formato */
+    }
+    h1 {
+        /* Aplica la fuente personalizada al elemento h1 */
+        font-family: 'JSBD', sans-serif; /* Usamos la fuente personalizada y una fuente de respaldo */
+        font-size: 4em;
+    }
+
+    h2 {
+        /* Aplica la fuente personalizada al elemento h1 */
+        font-family: 'Texto1', sans-serif; /* Usamos la fuente personalizada y una fuente de respaldo */
+        font-size: 2em;
+    }
+
         .carousel-item img {
             width: auto; /* Cambiado de 100% a auto */
             max-height: 100%; /* Agregado para controlar la altura máxima */
@@ -27,13 +47,6 @@
             margin-top: 15px;
             display: block; /* Asegurar que la imagen se muestre como bloque */
         }
-
-        /* Estilos adicionales si los necesitas */
-        /* .container {
-            background-color: rgba(255, 255, 255, 0.8); // Ejemplo de fondo semi-transparente blanco para los contenidos
-            padding: 20px;
-            border-radius: 10px;
-        } */
     </style>
 </head>
 <body>
@@ -63,7 +76,7 @@
 
 <!-- Encabezado "JSBD" centrado -->
 <div class="container text-center mt-3">
-    <h1>JSBD</h1>
+    <h1>-- JSBD --</h1>
 </div>
 
 <!-- Contenedor del Carrusel -->
@@ -104,20 +117,13 @@
                 <img src="images/M11.jpg" class="d-block w-100" alt="Imagen 11">
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
-        </a>
     </div>
 </div>
 
 <!-- Contenido de tu sitio -->
 <div class="container text-center" >
-    <p>Eleva tus sentidos, escalando tus emociones</p>
+    <br>
+    <h2>Eleva tus sentidos, escalando tus emociones</h2>
 </div>
 
 <!-- Scripts de Bootstrap y cualquier otro script que necesites -->
@@ -129,7 +135,7 @@
 <script>
     $(document).ready(function(){
         $('.carousel').carousel({
-            interval: 2000 // Cambia este valor según lo que desees
+            interval: 3000 // Cambia este valor según lo que desees
         });
     });
 </script>
