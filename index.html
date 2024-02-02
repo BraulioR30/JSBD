@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título de tu Sitio</title>
+    <!-- Agrega la referencia a los archivos CSS de Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Agrega tu propio archivo CSS personalizado -->
+    <style>
+        body {
+            /* Establece el fondo con la imagen deseada */
+            background-image: url('images/Fondo1.jpg');
+            /* Ajusta el tamaño del fondo */
+            background-size: cover;
+            /* Fija la posición del fondo */
+            background-position: center;
+            /* Establece un color de fondo de respaldo */
+            background-color: #f8f9fa; /* Esto es útil si la imagen no se carga o es transparente */
+        }
+
+        .carousel-item img {
+            width: auto; /* Cambiado de 100% a auto */
+            max-height: 100%; /* Agregado para controlar la altura máxima */
+            border: 2px solid black; /* Borde alrededor de la imagen */
+            border-radius: 5px;
+            margin-top: 15px;
+            display: block; /* Asegurar que la imagen se muestre como bloque */
+        }
+
+        /* Estilos adicionales si los necesitas */
+        /* .container {
+            background-color: rgba(255, 255, 255, 0.8); // Ejemplo de fondo semi-transparente blanco para los contenidos
+            padding: 20px;
+            border-radius: 10px;
+        } */
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Mezcal Artesanal</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Productos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="agaves.html">Agaves</a>
+            <a class="dropdown-item" href="curados.html">Curados</a>
+            <a class="dropdown-item" href="ensambles.html">Ensambles</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Encabezado "JSBD" centrado -->
+<div class="container text-center mt-3">
+    <h1>JSBD</h1>
+</div>
+
+<!-- Contenedor del Carrusel -->
+<div class="container">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/M1.jpg" class="d-block w-100" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/M2.jpg" class="d-block w-100" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/M3.jpg" class="d-block w-100" alt="Imagen 3">
+            </div>
+            <div class="carousel-item">
+                <img src="images/M4.jpg" class="d-block w-100" alt="Imagen 4">
+            </div>
+            <div class="carousel-item">
+                <img src="images/M5.jpg" class="d-block w-100" alt="Imagen 5">
+            </div>
+            <div class="carousel-item">
+                <img src="images/M6.jpg" class="d-block w-100" alt="Imagen 6">
+            </div>
+            <div class="carousel-item">
+                <img src="images/M7.jpg" class="d-block w-100" alt="Imagen 7">
+            </div>
+            <div class="carousel-item">
+                <img src="images/M8.jpg" class="d-block w-100" alt="Imagen 8">
+            </div>
+            <div class="carousel-item">
+                <img src="images/M9.jpg" class="d-block w-100" alt="Imagen 9">
+            </div>
+            <div class="carousel-item">
+                <img src="images/M10.jpg" class="d-block w-100" alt="Imagen 10">
+            </div>
+            <div class="carousel-item">
+                <img src="images/M11.jpg" class="d-block w-100" alt="Imagen 11">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+</div>
+
+<!-- Contenido de tu sitio -->
+<div class="container text-center" >
+    <p>Eleva tus sentidos, escalando tus emociones</p>
+</div>
+
+<!-- Scripts de Bootstrap y cualquier otro script que necesites -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Script para activar el carrusel automático -->
+<script>
+    $(document).ready(function(){
+        $('.carousel').carousel({
+            interval: 2000 // Cambia este valor según lo que desees
+        });
+    });
+</script>
+</body>
+</html>
